@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>TRIVIA 0.2 — School Aurora | Scheda del Caso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --text: #111;
+      --muted: #666;
+      --line: #ddd;
+      --accent: #000;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 24px 32px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    header .meta {
+      margin-top: 4px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 32px;
+      padding: 32px;
+    }
+
+    /* Scheda del caso */
+    .case-sheet {
+      border-right: 1px solid var(--line);
+      padding-right: 24px;
+    }
+
+    .case-sheet h2 {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      color: var(--muted);
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .field span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .field strong {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* Galleria immagini */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background-color: #e0e0e0;
+      border: 1px solid var(--line);
+    }
+
+    /* Testo descrittivo */
+    .description {
+      grid-column: 1 / -1;
+      margin-top: 32px;
+      max-width: 720px;
+    }
+
+    .description h3 {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      color: var(--muted);
+    }
+
+    .description p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    footer {
+      padding: 24px 32px;
+      border-top: 1px solid var(--line);
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .case-sheet {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+        padding-right: 0;
+        padding-bottom: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TRIVIA School Aurora 0.2</h1>
+    <div class="meta">Scheda del caso — #004 · Il nuovo riferimento</div>
+  </header>
+
+  <main>
+    <!-- Scheda del caso -->
+    <section class="case-sheet">
+      <h2>Scheda del caso</h2>
+
+      <div class="field">
+        <span>Nome</span>
+        <strong>TRIVIA School Aurora 0.2</strong>
+      </div>
+
+      <div class="field">
+        <span>Luogo</span>
+        <strong>Torino</strong>
+      </div>
+
+      <div class="field">
+        <span>Anno</span>
+        <strong>2025</strong>
+      </div>
+
+      <div class="field">
+        <span>Studio</span>
+        <strong>TRIVIA</strong>
+      </div>
+
+      <div class="field">
+        <span>Cliente</span>
+        <strong>Comune di Torino</strong>
+      </div>
+
+      <div class="field">
+        <span>Stato</span>
+        <strong>Proposta progettuale</strong>
+      </div>
+    </section>
+
+    <!-- Galleria immagini -->
+    <section class="gallery">
+      <!-- Cambia i src con i nomi reali dei file nella cartella images -->
+      <img src="images/trivia-02-masterplan.jpg" alt="Masterplan del sistema scolastico — TRIVIA 0.2" />
+      <img src="images/trivia-02-piattaforma.jpg" alt="Piattaforma didattica elevata — TRIVIA 0.2" />
+      <img src="images/trivia-02-sezione.jpg" alt="Sezione e stratificazione spaziale — TRIVIA 0.2" />
+      <img src="images/trivia-02-percorsi.jpg" alt="Percorsi e connessioni aeree — TRIVIA 0.2" />
+    </section>
+
+    <!-- Descrizione -->
+    <section class="description">
+      <h3>Descrizione</h3>
+      <p>
+        TRIVIA School Aurora 0.2 assume il ruolo di nuovo riferimento interno
+        al catalogo, non come esito conclusivo ma come dispositivo teorico
+        trasferibile. Il progetto rielabora il principio della piattaforma
+        elevata e del sistema relazionale, trasformando la scuola in una
+        infrastruttura didattica attraversabile, capace di mediare tra spazio
+        pubblico, comunità scolastica e contesto urbano.
+        <br /><br />
+        Il suolo viene liberato e reinterpretato come campo di relazione e
+        soglia attiva, mentre i volumi didattici si innestano in un piano
+        sospeso continuo, collegato da passerelle e aperture che garantiscono
+        luce, visibilità e continuità percettiva tra le quote. In questo assetto,
+        i flussi non si limitano a distribuire, ma costruiscono una sequenza
+        di spazi ibridi in cui apprendimento, socialità e attraversamento
+        si sovrappongono.
+        <br /><br />
+        La sospensione delle gerarchie tra aula, percorso e spazio collettivo
+        consente una riconfigurazione costante degli ambienti, traducendo la
+        complessità in valore progettuale. L’edificio si propone come sistema
+        aperto, adattabile nel tempo, in cui l’architettura non organizza solo
+        funzioni, ma mette in scena relazioni, rendendo la scuola una vera
+        infrastruttura civica per il quartiere e un riferimento teorico per
+        successive trasformazioni.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 — Catalogo di casi · Laboratorio di Teoria del Progetto · Politecnico di Torino
+  </footer>
+
+</body>
+</html>
